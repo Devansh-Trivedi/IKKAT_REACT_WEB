@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import Product from './Screens/ProductScreen';
+import Product from './screens/ProductScreen';
 import {BrowserRouter,Route, Link, Switch} from 'react-router-dom';
-import ProductScreen from './Screens/ProductScreen';
-import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import HomeScreen from './screens/HomeScreen';
 import Footer from './Footer';
 import Home from './Home';
 import Designer from './DesignerHome';

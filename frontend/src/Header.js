@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter,Route,Link,Redirect} from 'react-router-dom';
-import HomeScreen from './Screens/HomeScreen';
+import HomeScreen from './screens/HomeScreen';
 import Home from './Home';
 function Header(){
     const openMenu=()=>{
@@ -16,18 +16,18 @@ function Header(){
         
         <header>
         <div className="about-container">
-        <div class="container">
+        <div className="container">
             <input type="checkbox" name="" id="check" />
             
             
-            <div class="logo-container">
+            <div className="logo-container">
             
             <div className="sidebar-logo">
              <button onClick={openMenu}>
                  &#9776;
             </button>
           </div>
-          <Link to="/"> <h3 class="logo">MIRROR</h3></Link>
+          <Link to="/"> <h3 className="logo">MIRROR</h3></Link>
                 
             </div>
             
@@ -41,42 +41,42 @@ function Header(){
            
             
 
-            <div class="nav-btn">
-                <div class="nav-links">
+            <div className="nav-btn">
+                <div className="nav-links">
                     <ul>
-                        <li class="nav-link active">
+                        <li className="nav-link active">
                             <Link to="/home">Home</Link>
                         </li>
-                        <li class="nav-link" >
+                        <li className="nav-link" >
                             <a  href="#">About</a>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <a href="#">Trending</a>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <a href="#">Customize</a>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <a href="/">Shop</a>
                         </li>
 
-                        <li class="nav-link">
-                            <a href="#">Account<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
+                        <li className="nav-link">
+                            <a href="#">Account<i className="fas fa-caret-down"></i></a>
+                            <div className="dropdown">
                                 <ul>
-                                    <li class="dropdown-link">
+                                    <li className="dropdown-link">
                                         <a href="#">My Account</a>
                                     </li>
-                                    <li class="dropdown-link">
+                                    <li className="dropdown-link">
                                         <a href="#">My Order</a>
                                     </li>
-                                    <li class="dropdown-link">
+                                    <li className="dropdown-link">
                                         <a href="#">Settings</a>
                                     </li>
-                                    <li class="dropdown-link">
+                                    <li className="dropdown-link">
                                         <a href="#">LogOut</a>
                                     </li>
-                                    <div class="arrow"></div>
+                                    <div className="arrow"></div>
                                 </ul>
                             </div>
                         </li>
@@ -88,32 +88,32 @@ function Header(){
    
             </div>
 
-                <div class="log-sign">
+                <div className="log-sign">
                     
 
-            <div class="searchBox">
+            <div className="searchBox">
 
-            <input class="searchInput"type="text" name="" placeholder="Search" />
-            <button class="searchButton" href="#">
-                <i class="fa fa-search">
+            <input className="searchInput"type="text" name="" placeholder="Search" />
+            <button className="searchButton" href="#">
+                <i className="fa fa-search">
                    
                 </i>
             </button>
         </div>
 
-        <a href="#" class="fa fa-bell" ></a>
+        <a href="#" className="fa fa-bell" ></a>
                 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#" class="fa fa-heart">
+        <a href="#" className="fa fa-heart">
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#" class="fa fa-shopping-cart">
+        <a href="#" className="fa fa-shopping-cart">
                 </a>
                 </div>
             </div>
 
-            <div class="hamburger-menu-container">
-                <div class="hamburger-menu">
+            <div className="hamburger-menu-container">
+                <div className="hamburger-menu">
                     <div></div>
                 </div>
             </div>
