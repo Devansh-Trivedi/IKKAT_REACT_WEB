@@ -8,6 +8,8 @@ import HomeScreen from './screens/HomeScreen';
 import Footer from './Footer';
 import Home from './Home';
 import Designer from './DesignerHome';
+import Checkout from './CheckoutPage';
+import './cart-style.css'
 
 import './home-style.css';
 
@@ -279,11 +281,16 @@ function App() {
 </div>
 
 <Route path='/products/:id' component={ProductScreen} />
-<Route path='/' exact={true} component={HomeScreen} />
+<Route path='/Checkout' exact={true} component={Checkout} />
+<Route path='/' exact={true} component={Home} />
+
 
        
        <Route path="/home">
           <Home />
+       </Route>
+    <Route path="/CheckoutPage">
+          <Checkout />
     </Route>
     <Route path="/DesignerHome">
           <Designer />
