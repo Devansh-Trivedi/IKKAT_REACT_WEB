@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import './home-style.css';
-
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
+import './carousel.css';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-
+import { Card,Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import './App.css';
 // import Header from './Header';
@@ -24,6 +27,7 @@ function Designer(){
       });
     return(
 <div className="wrapper">
+<div className="home-header">
 
 
 <div className="row no-gutters">
@@ -32,7 +36,13 @@ function Designer(){
 <div className="left" data-aos="fade-right">
 <div className="landing-top-img">
 <div className="landing-top">
-<div className="inner">
+<div className="inner">                         
+
+
+
+
+
+
         <h6 style={{fontSize:"18px"}}>MIRROR CUSTOMIZATION WORLD</h6>
 
         <div className="act1"></div>
@@ -63,16 +73,17 @@ function Designer(){
 
 
 
-
+</div>
+<div className="about-container">
 <section id="abt-sec">
-    <div className="about">
+    <div className="about" data-aos="fade-down">
         <div className="about-title" data-aos="fade-up" >
             <br  />
-            <p>About us</p>
+            <p  style={{ fontSize: "50px",color: "white",fontWeight:"bolder" }}>About us</p>
             
         </div>
         <div className="abt" data-aos="fade-up">
-        <p style={{textAlign: "justify", fontSize: "18px", color: "black",}}>Our mission is to deliver fashion and make our customers happy! Mirror makes fashion available to everyone at a reasonable price. We love the work we do, the people we work for and the <span id="dots">...</span><span id="more"> people we work alongside! Did you guys ever wait for so many weeks to get your dress from the designer? or did you ever visit them too many times for alteration or just because you didn’t like design? No worries. You are at the right place Mirror lets customers to style their personal clothes and get them tailored with our exclusive designers.For reference you can even send or post some pictures regarding how to style your dresses or exactly in which style do you want them to be. You can even buy designer clothes specially designed in boutiques. If you are a designer you register and wait for the verification of your boutique, post your designs and sell them by logging on designer section. Mirror offers people a platform where they can get their desired clothes designed effortlessly. (This platform also offers designers to sell and design for the designers).So, what are you waiting for? Go on and make your design with us!</span>
+        <p style={{textAlign: "justify",color:"white", fontSize: "30px", }}>Our mission is to deliver fashion and make our customers happy! Mirror makes fashion available to everyone at a reasonable price. We love the work we do, the people we work for and the <span id="dots">...</span><span id="more"> people we work alongside! Did you guys ever wait for so many weeks to get your dress from the designer? or did you ever visit them too many times for alteration or just because you didn’t like design? No worries. You are at the right place Mirror lets customers to style their personal clothes and get them tailored with our exclusive designers.For reference you can even send or post some pictures regarding how to style your dresses or exactly in which style do you want them to be. You can even buy designer clothes specially designed in boutiques. If you are a designer you register and wait for the verification of your boutique, post your designs and sell them by logging on designer section. Mirror offers people a platform where they can get their desired clothes designed effortlessly. (This platform also offers designers to sell and design for the designers).So, what are you waiting for? Go on and make your design with us!</span>
                             <a onclick="myFunction()" id="myBtn" className="read"> Read More.. </a></p>
                            
 
@@ -89,17 +100,19 @@ function Designer(){
 
     </div>
     </section>
+</div>
+<br />
+<br />
+<br />
 
 
 
-    <div className="page-wrappper">
-            {/* <!-- post slider --> */}
+    {/* <div className="page-wrappper">
             <div className="post-slider">
                 <p className="slider-title" style={{fontFamily: "sansSerif", fontSize: "35px"}}>Blogs</p>
                 <i className="fa fa-chevron-left prev"></i>
                 <i className="fa fa-chevron-right next"></i>
                 <div className="post-wrapper">
-                    {/* <!-- START POST --> */}
                     <div className="post" data-aos="flip-right">
                         <img src="images/designer.jpg" className="slider-image" />
                         <div className="post-info">
@@ -137,14 +150,103 @@ function Designer(){
                             <i className="fa fa-calendar-o"> APRIL 9, 2020 <a href="#" style={{textDecoration: "none"}}>&nbsp;&nbsp;Read more</a></i>
                         </div>
                     </div>
-                    {/* <!-- END POST --> */}
                 </div>
             </div>
         </div> 
            
        
-         
+          */}
     
+
+          <div className="carousel" id="sliderimg">
+            <AliceCarousel autoPlay autoPlayInterval="4000">
+                <img src={"/images/shop1.jpg"} className="sliderimg"/>
+                <img src={"/images/designimg.jpg"} className="sliderimg"/>
+                <img src={"/images/home.jpg"} className="sliderimg"/>
+                <img src={"/images/shop2.jpg"} className="sliderimg"/>
+            </AliceCarousel>
+        </div>
+
+{/*slider boxes*/ }
+<div className="carousel" id="sliderimg">
+            <AliceCarousel autoPlay autoPlayInterval="4000">
+                
+                <div  style={{ marginLeft:"400px" }}>
+                
+                <Card style={{ width: '45rem', }}>
+                    <Card.Img variant="top" src="/images/shop1.jpg" />
+                        <Card.Body>
+                            <Card.Title>Attractive Prices</Card.Title>
+                                <Card.Text>
+                                     Some quick example text to build on the card title and make up the bulk of
+                                     card's content.
+                                </Card.Text>
+                                <Button variant="primary">Read More.</Button>
+                        </Card.Body>
+                </Card>
+                
+                </div>
+
+                <div  style={{ marginLeft:"400px" }}>
+                
+                <Card style={{ width: '45rem', }}>
+                    <Card.Img variant="top" src="/images/designimg.jpg" />
+                        <Card.Body>
+                            <Card.Title>Amazing Discounts</Card.Title>
+                                <Card.Text>
+                                     Some quick example text to build on the card title and make up the bulk of
+                                     card's content.
+                                </Card.Text>
+                                <Button variant="primary">Read More.</Button>
+                        </Card.Body>
+                </Card>
+                
+                </div>
+
+                <div id="boxslider" style={{ marginLeft:"400px", }}>
+                
+                <Card style={{ width: '45rem', }}>
+                    <Card.Img variant="top" src="/images/shop2.jpg" />
+                        <Card.Body>
+                            <Card.Title>Shirts</Card.Title>
+                                <Card.Text>
+                                     Some quick example text to build on the card title and make up the bulk of
+                                     card's content.
+                                </Card.Text>
+                                <Button variant="primary">Read More.</Button>
+                        </Card.Body>
+                </Card>
+                
+                </div>
+                <div id="boxslider" style={{ marginLeft:"400px", }}>
+                
+                <Card style={{ width: '45rem', }}>
+                    <Card.Img variant="top" src="/images/d1.jpg" />
+                        <Card.Body>
+                            <Card.Title>Flat 40% off !!</Card.Title>
+                                <Card.Text>
+                                     Some quick example text to build on the card title and make up the bulk of
+                                     card's content.
+                                </Card.Text>
+                                <Button variant="primary">Read More.</Button>
+                        </Card.Body>
+                </Card>
+                
+                </div>
+                
+
+            </AliceCarousel>
+        </div>
+
+<div>
+
+</div>
+
+
+
+
+
+
     
     <section id="services">
     <p style={{textAlign: "center",fontFamily: 'sans-serif',

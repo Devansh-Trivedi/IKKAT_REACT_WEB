@@ -45,7 +45,7 @@ function Header(){
                 <div className="nav-links">
                     <ul>
                         <li className="nav-link active">
-                            <Link to="/home">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li className="nav-link" >
                             <a  href="#">About</a>
@@ -57,7 +57,7 @@ function Header(){
                             <a href="#">Customize</a>
                         </li>
                         <li className="nav-link">
-                            <a href="/">Shop</a>
+                            <a href="/shop">Shop</a>
                         </li>
 
                         <li className="nav-link">
@@ -86,7 +86,7 @@ function Header(){
       
                    
    
-            </div>
+                </div>
 
                 <div className="log-sign">
                     

@@ -1,7 +1,9 @@
 .App {
     text-align: center;
   }
-  
+  body{
+    font-family: 'Merriweather', serif;
+  }
   .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -12,7 +14,16 @@
       animation: App-logo-spin infinite 20s linear;
     }
   }
-  
+  @media (max-width: 768px){
+    #sidebar > .list-unstyled {
+    width: 100px;
+    
+    
+}
+li,a{
+  width:70%;
+}
+  }
   .App-header {
     background-color: #282c34;
     min-height: 100vh;
@@ -25,7 +36,7 @@
   }
   
   .App-link {
-    color: #61dafb;
+    color: #FFD662FF;
   }
   
   @keyframes App-logo-spin {

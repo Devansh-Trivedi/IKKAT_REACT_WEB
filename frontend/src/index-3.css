@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body{
+  font-family: 'Merriweather', serif;
+
+}
 .footer{
     width:100%;
-    background-color:#68ebd1;
+    background-color:#FFD662FF;
     display: block;
   }
   .inner-footer{
@@ -242,11 +248,11 @@
     width: 150px;
     padding: 5px;
     height: 40px;
-    background-color: #68ebd1
+    background-color: #FFD662FF
   }
   #content .tit h2::after{
     content: '';
-    border-top: 40px solid #68ebd1;
+    border-top: 40px solid #FFD662FF;
     border-right: 40px solid transparent;
     position: relative;
     left: 91px;
@@ -311,13 +317,13 @@
     font-size: 11px;
     margin-top: -15px;
     color: black;
-    background-color:#68ebd1;
+    background-color:#FFD662FF;
     border-radius: 0px;
     border-color: none;
   }
   .notifi-item button:hover{
     color: black;
-    background-color:#68ebd1;
+    background-color:#FFD662FF;
     border-radius: 0px;
-    border-color: #68ebd1;
+    border-color: #FFD662FF;
   }

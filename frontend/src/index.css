@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 html {
   font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
   box-sizing: border-box;
@@ -476,7 +478,7 @@ tbody > tr:nth-child(odd) {
 
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merriweather', serif;
   background: #fafafa;
   height:100%;
 }
@@ -628,7 +630,7 @@ body {
 }
 
 .dropdown-link:hover > a{
-  background-color:#68ebd1;
+  background-color:#FFD662FF;
   color: black;
 }
 
@@ -787,7 +789,7 @@ body {
       top: 3rem;
       left: 0;
       width: 100%;
-      background-color: #68ebd1;
+      background-color: #FFD662FF;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
@@ -929,7 +931,7 @@ body {
   /*transform:  translate(-50%,50%);*/
   margin-right: 50px;
   margin-top: -1px;
-  background: #68ebd1;
+  background: #FFD662FF;
   height: 40px;
   border-radius: 40px;
   padding: 4px;
@@ -952,7 +954,7 @@ color : #2f3640;
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: #68ebd1;
+  background: #FFD662FF;
   display: flex;
   justify-content: center;
 /*  align-items: center;*/
@@ -1039,7 +1041,7 @@ a:focus {
 #sidebar .sidebar-header {
   padding: 20px;
   
-  background-image: linear-gradient(to right, #68ebd1 , white);
+  background-image: linear-gradient(to right, #FFD662FF , white);
   color: black;
 }
 
@@ -1062,14 +1064,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-  color: #68ebd1;
+  color: #FFD662FF;
   background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
   color: #fff;
-  background: #68ebd1;
+  background: #FFD662FF;
 }
 
 a[data-toggle="collapse"] {

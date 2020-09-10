@@ -50,12 +50,12 @@ function Checkout(){
                     </div>
                     <br />
                     <h4 style={{fontSize:"20px",}}>Save Address as</h4>
-                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", backgroundColor: "#68ebd1", borderRadius: "5px", color:" black"}}>Home</button>
-                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom:" 20px", backgroundColor:" #68ebd1",fontSize:"20px", borderRadius: "5px", color: "black"}}>Office</button>
+                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", backgroundColor: "#FFD662FF", borderRadius: "5px", color:" black"}}>Home</button>
+                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom:" 20px", backgroundColor:" #FFD662FF",fontSize:"20px", borderRadius: "5px", color: "black"}}>Office</button>
                     <br />
                     <p style={{color: "black"}}><input type="checkbox"  style={{backgroundColor:"white",fontSize:"20px"}} /> Make This is my default address</p>
                     <br />
-                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", marginTop: "-10px", backgroundColor: "#68ebd1", borderRadius: "5px", color:"black"}}>Add Address</button>
+                    <button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", marginTop: "-10px", backgroundColor: "#FFD662FF", borderRadius: "5px", color:"black"}}>Add Address</button>
                    
                     
 
@@ -83,7 +83,7 @@ function Checkout(){
 <p>Shipping Charge</p>
 <p>Rs.<span id="shipping_charge">50.0</span></p>
 </div>
-<a href="payment.html"><button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", backgroundColor: "#68ebd1", borderRadius: "5px", color: "black"}}>Continue</button></a>
+<a href="payment.html"><button type="submit" className="btn btn-primary" style={{fontSize:"20px",marginBottom: "20px", backgroundColor: "#FFD662FF", borderRadius: "5px", color: "black"}}>Continue</button></a>
 
 </div>
 

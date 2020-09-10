@@ -7,6 +7,8 @@ import ProductScreen from './screens/ProductScreen';
 import HomeScreen from './screens/HomeScreen';
 import Footer from './Footer';
 import Home from './Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Designer from './DesignerHome';
 import Checkout from './CheckoutPage';
 import './cart-style.css'
@@ -288,6 +290,9 @@ function App() {
        
        <Route path="/home">
           <Home />
+       </Route>
+       <Route path="/shop">
+          <HomeScreen />
        </Route>
     <Route path="/CheckoutPage">
           <Checkout />
